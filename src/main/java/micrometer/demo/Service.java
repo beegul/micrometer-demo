@@ -60,7 +60,8 @@ public class Service {
   }
 
   //'Process' a request by removing entries from the list.
-  @Scheduled(fixedRate = 5000)
+  //@Scheduled(fixedRate = 5000)
+  @Scheduled(fixedDelay = 5000)
   @Timed(description = "Time spent processing requests.", longTask = true)
   public void processRequest() throws InterruptedException{
     if(!requests.isEmpty()){
