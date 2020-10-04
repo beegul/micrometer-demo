@@ -33,4 +33,5 @@ Within prometheus/grafana, these basic commands can be run to get a visualisatio
 - **rate(method_timed_seconds_duration_sum[5m]) / rate(method_timed_seconds_active_count[5m])** - The rate of how frequently and object is removed from the list.
 
 **Gotchas**
+
 If you get an error on docker compose along the lines of `Cannot create container for service prometheus: status code not OK but 500:` make sure docker has permission to read that folder. I made this in Windows and had to give docker permisson to the project folder in the 'File Sharing' options of docker for Windows.
