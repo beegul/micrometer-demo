@@ -30,8 +30,8 @@ Within prometheus/grafana, these basic commands can be run to get a visualisatio
 - **Request_Gauge** - Shows the total number of request objects created.
 - **Request_Counter_total** - Shows the total number of request object create per object type.
 - **rate(Request_Counter_total[5m])** - Shows the rate of request objects created per type over a five-minute period.
-- **rate(method_timed_seconds_duration_sum[5m])** - The rate of how frequently an object is removed from the list.
 - **method_timed_seconds_duration_sum** - time taken to remove a request from the list.
+- **rate(method_timed_seconds_duration_sum[5m])** - The rate of how frequently an object is removed from the list.
 
 **Gotchas**
 
